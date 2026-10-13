@@ -1,19 +1,17 @@
-fun main() {
-    println("please enter a number")
-    val input = readln()
-    val inputASInteger = input.toIntOrNull()
-
-    if (inputASInteger != null) {
-        
-        val isEven = inputASInteger % 2 == 0
-        
-        if (isEven) {
-            println("the number is even")
-        } else {
-            println("the number is odd")
+fun main()
+{
+    println("please enter anumber")
+    val input=readln()
+    val inputAsInteger=input.toIntOrNull()
+    if(inputAsInteger != null)
+    {
+        val output=when{
+            inputAsInteger%2==0->
+            "the number is even"
+            inputAsInteger<10 ->
+            "the number is odd and less than 10"
+            else->"the number is odd and at least 11"
         }
-
-    } else {
-        println("Enter Valid Number")
-    }
+        println(output)
+    } 
 }
