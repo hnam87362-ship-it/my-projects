@@ -1,14 +1,18 @@
 fun main() {
-println("enter the frist number:")
-var x =readln().toInt()
-println("enter the second number:")
-var y=readln().toInt()
-x++
-y--
-println("sum:${x+y}")
-println("is operation postive?${(x+y)>0}")
-println("division:${x/y}")
-println("is operation negative?${(x-y)<0}")
-println("subtraction:${x-y}")
+    println("Please enter a number:")
+    val input = readln()
+    val inputAsInteger = input.toIntOrNull()
 
+    if (inputAsInteger != null) {
+        val output = if (inputAsInteger % 2 == 0) {
+            "The number is even!"
+        } else if (inputAsInteger < 10) {
+            "The number is odd and less than 10"
+        } else {
+            "The number is odd and at least 11"
+        }
+        println(output)
+    } else {
+        println("Dude, enter a valid number!")
+    }
 }
