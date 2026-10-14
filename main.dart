@@ -1,15 +1,10 @@
-void main() {
-  Map<String,String> planets={
-    "frist":"mercury",
-    "second":"venus",
-    "third":"earth",
-    "fourth":"mars",
-    "fifth":"jupiter",
-  };
-  planets["sixth"]="uranus";
-  print(planets.containsValue("earth"));
-  print(planets.remove("third"));
-  print(planets.keys);
-  print(planets.values);
-  print(planets);
+ void main() {
+  var name="malak";
+  print(name);
+  const age=25;
+  print(age);
+  print(age+1);
+  print(age-1);
+  print(age/1);
+  print(age%100);
 }
