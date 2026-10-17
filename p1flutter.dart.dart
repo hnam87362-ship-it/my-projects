@@ -9,9 +9,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('تطبيقي الأول')),
+        appBar: AppBar(title: Text('frist Application')),
         body: Center(
-          child: Text('أهلاً بكِ يا ملك في عالم فلاتر!'),
+          child: Text('welcom to my web!'),
         ),
       ),
     );
